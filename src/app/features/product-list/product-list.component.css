@@ -1,0 +1,33 @@
+.on-sale {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.card-body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(177, 172, 172);
+}
+
+.card-img-top {
+    height: 14rem;
+    object-fit: cover;
+}
+
+
+@media (width < 768px){
+    
+    .on-sale {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}

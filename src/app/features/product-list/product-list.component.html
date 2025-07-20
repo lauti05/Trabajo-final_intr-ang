@@ -1,0 +1,12 @@
+<section class="on-sale">
+    @for (p of products; track p.id){
+        <div class="card">
+            <img class="card-img-top img-fluid" src={{p.image}} alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">{{p.name}}</h5>
+                <p class="card-text">{{p.price | currency:'USD':'symbol':'1.2-2':'en'}}</p>
+                <button (click)="addToCart(p)" class="btn btn-primary">Add to cart</button>
+            </div>
+        </div>
+    }
+</section>
